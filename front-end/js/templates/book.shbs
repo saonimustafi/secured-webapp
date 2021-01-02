@@ -1,0 +1,12 @@
+<div class="bookContainer">
+    <img src= {{{yubl (yavu (yufull coverImage ))}}} height="100" width="100">
+    <ul>
+        <li> Hello ! </li>
+        <a href="{{{yubl (yavd (yufull url))}}}">{{{yd url}}}</a>
+        <li>{{{yd  title }}}</li>
+        <li>{{{yd  author }}}</li>
+        <li>{{{yd  releaseDate }}}</li>
+        <li>{{{yd  keywords }}}</li>
+    </ul>
+    <button class="delete">Delete</button>
+</div>

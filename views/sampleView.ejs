@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <h2>Hello world !!</h2>
+        <p>This is <%= name %> of age <%- age %> </p>
+        <p>Click <a href="mailto:biswasaveek@gmail.com"> here </a> to send a mail </p>
+        <p>Here is my msg: <br> <%- msg %></p>
+        <p>Click <a href="<%= xssFilters.uriInDoubleQuotedAttr(hrefVal) %>">here</a> to check XSS: </p>
+        <!--<p>Click <a href="<%#= hrefVal %>"> <%#= xssFilters.inHTMLData(hrefName) %></a> to check XSS: </p>-->
+        <div data-pdt="<%= dataAttr %>">This is for data</div>
+        <p><%= xssFilters.inDoubleQuotedAttr(getString())%></p>
+        <p><%= xssFilters.inDoubleQuotedAttr(getObject())%></p>
+    </div>
+</body>
+
+</html>

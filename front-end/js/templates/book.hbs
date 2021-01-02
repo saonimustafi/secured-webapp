@@ -1,0 +1,19 @@
+<div class="bookContainer">
+    <img src= {{coverImage }} height="100" width="100">
+    <ul>
+        <li> Hello ! </li>
+        <!--<a href="{{!xssFilters.uriInDoubleQuotedAttr(url)}}">{{!url}}</a>-->
+        <!--<a href="{{!uriInDoubleQuot(url)}}">{{!url}}</a>-->
+        <!--<a href="{{!url}}">{{!url}}</a>-->
+        <li><a href = "{{xssFiltersUriInDoubleQuotedAttr titleLink}}">{{ title }}</a></li>
+        <!--<li><a href = "{{! getJavascriptAlert authorLink}}">{{! author }}></a></li>-->
+        <!--<li><a href = "{{! getString }}">{{! author }}></a></li>-->
+        <li><a href = "/abcdef/{{ authorLink }}">{{ author }}></a></li>
+        <li>{{ releaseDate }}</li>
+        <li>{{ keywords }}</li>
+        <li>{{getStr.getString}}</li>
+    </ul>
+    <div data-pdt="{{name}}">Hiii {{someString}}</div>
+    <!--<div> <script>alert('xss')</script>{{!someString}}</div>-->
+    <button class="delete">Delete</button>
+</div>
